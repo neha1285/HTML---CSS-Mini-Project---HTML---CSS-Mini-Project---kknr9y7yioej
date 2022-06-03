@@ -1,1 +1,210 @@
+body {
+    font-family: Arial;
+    margin: 0;
+  }
+* {
+    box-sizing: border-box;
+}
+.container {
+    
+    position: relative;
+    width: 60%;
+    margin: 0 auto;
+}
+.img1 {
+  position: relative;
+  width: 60%;
+  margin: 0 auto;
+}
 
+.mySlides{
+    display: none;
+    height: 40%;
+    width: 60%;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* Container for image text */
+  .caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Six columns side by side */
+  .column {
+    float: left;
+    width: 16.66%;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+
+
+  #navigation{	
+	display: flex;
+	flex-direction: row;
+	position:fixed;
+	clear: both;
+	left:0;
+	top:0;
+	height:100px;
+	width:100%;
+	margin-left:0px;
+	z-index: 3;
+	background: black
+   -pie-background: rgba(102, 102,0, 0.7);
+    behavior: url(PIE.htc);
+}
+
+#nav{
+	margin:auto;
+	list-style:none;
+	width:810px;
+	height:80px;
+}
+
+#nav li{
+	float:left;
+	margin:10px;
+	background: rgba(0, 0,0, 0.6);
+   -pie-background: rgba(0,0,0, 0.6);
+    behavior: url(PIE.htc);
+	
+}
+
+#nav li a{
+	display:block;
+	outline: none;
+	text-decoration:none;
+	width:130px;
+	height:80px;
+	line-height:90px;
+	 text-align: center;
+	 font-size:26px;
+	 color:#fff;
+	 	font-family: 'Satisfy', 'cursive';
+}
+#nav li:hover{
+	background: rgba(255, 255,255, 0.6);
+   -pie-background: rgba(255, 255,255, 0.6);
+    behavior: url(PIE.htc);
+}
+
+#nav li:hover a{
+		color:#CC6600;
+}
+
+
+/* pages */
+#welcome{
+	margin:auto;
+	width:1000px;
+	height:700px;
+
+}
+	
+#container_welcome{
+	margin:auto;
+	height:650px;
+	width:800px;
+	color:#c6d3c2;
+	font-family: 'Satisfy', 'cursive';
+	font-size:20px;
+
+
+}
+#container_welcome p{
+	padding-top:120px;
+}
+
+#work_container {
+	display: flex;
+	flex-direction: row;
+}
+#homepic{
+	margin:auto;
+	height:400px;
+	width:691px;
+	//background:red;
+}
+
+#homepic img{
+	margin-top:100px;
+}
+
+#gallery{
+	margin:auto;
+	margin-top:40px;
+	height:650px;
+	width:1000px;
+
+
+}
+#wedding{
+	margin:auto;
+	margin-top:40px;
+	height:650px;
+	width:1000px;
+}
+
+#life{
+	margin:auto;
+	margin-top:40px;
+	height:650px;
+	width:1000px;
+}
